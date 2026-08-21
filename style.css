@@ -1,0 +1,39 @@
+body {
+    background-color: #daecea;
+    overflow-x: hidden;
+}
+    h1 {
+        color: #333;
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+    .imagem {
+        text-align: center;
+        margin: 30px;
+    }
+    .navbar {
+        background-color: #8dd3c5;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        gap: 300px;
+        position: sticky;
+        width: 100%;
+    }
+    .navbar a {
+        color: #0c0202;
+        text-decoration: none;
+        display: inline-block;
+        background-color: #1d9eaf;
+        border-radius: 6px;
+        padding: 20px 30px;
+        font-size: 20px;
+    }
+    .conteudo {
+        width:100%;
+        margin: 20px;
+        padding: 20px;
+
+    }
+    
+    
