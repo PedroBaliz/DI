@@ -35,5 +35,11 @@ body {
         padding: 20px;
 
     }
+    .secao {
+        display:none;
+    }
+    .secao:target {
+        display: block;
+    }
     
     
