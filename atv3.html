@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Portal Educacional - IHC & UX/UI</title>
+    <title>Revisão e UX/UI</title>
 
     <link rel="stylesheet" href="atv3.css">
 </head>
@@ -16,299 +17,428 @@
         <p>IHC & UX/UI</p>
     </header>
 
-    <main>
+
+    <main class="tabs-container">
 
         <!-- CONTROLE DAS ABAS -->
-        <input type="radio" name="tabs" id="tab1" checked>
-        <input type="radio" name="tabs" id="tab2">
-        <input type="radio" name="tabs" id="tab3">
-        <input type="radio" name="tabs" id="tab4">
-        <input type="radio" name="tabs" id="tab5">
+
+        <input type="radio" name="tabs" id="tab-ihc" checked>
+
+        <input type="radio" name="tabs" id="tab-design-thinking">
+
+        <input type="radio" name="tabs" id="tab-heuristicas">
+
+        <input type="radio" name="tabs" id="tab-wcag">
+
+        <input type="radio" name="tabs" id="tab-ux-ui">
+
 
         <!-- MENU -->
-        <nav class="tabs">
-            <label for="tab1">IHC</label>
-            <label for="tab2">Design Thinking</label>
-            <label for="tab3">Heurísticas de Nielsen</label>
-            <label for="tab4">WCAG & Cores</label>
-            <label for="tab5">UX/UI em Dev</label>
+
+        <nav class="nav-tabs">
+
+            <label for="tab-ihc">
+                IHC
+            </label>
+
+            <label for="tab-design-thinking">
+                Design Thinking
+            </label>
+
+            <label for="tab-heuristicas">
+                Heurísticas de Nielsen
+            </label>
+
+            <label for="tab-wcag">
+                WCAG & Cores
+            </label>
+
+            <label for="tab-ux-ui">
+                UX/UI em Dev
+            </label>
+
         </nav>
 
 
-        <!-- ================= IHC ================= -->
+        <!-- CONTEÚDO -->
 
-        <section class="tab-content content1">
-
-            <h2>Interação Humano-Computador (IHC)</h2>
-
-            <div class="card">
-                <h3>O que é IHC?</h3>
-
-                <p>
-                    A Interação Humano-Computador (IHC) é uma área que estuda
-                    a interação entre pessoas e sistemas computacionais.
-                </p>
-
-                <p>
-                    Seu objetivo é tornar os sistemas mais fáceis,
-                    eficientes, acessíveis e agradáveis de utilizar.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>Importância da IHC</h3>
-
-                <ul>
-                    <li>Melhora a experiência do usuário;</li>
-                    <li>Facilita a utilização dos sistemas;</li>
-                    <li>Reduz erros durante a interação;</li>
-                    <li>Aumenta a acessibilidade;</li>
-                    <li>Melhora a eficiência das tarefas.</li>
-                </ul>
-            </div>
-
-            <div class="link-box">
-                <h3>Site sobre IHC</h3>
-
-                <p>
-                    Acesse o site para conhecer mais sobre
-                    Interação Humano-Computador.
-                </p>
-
-                <a href="atv1.html">Acessar site →</a>
-            </div>
-
-        </section>
+        <div class="content-container">
 
 
-        <!-- ================= DESIGN THINKING ================= -->
+            <!-- ================= IHC ================= -->
 
-        <section class="tab-content content2">
+            <section class="tab-content content-ihc">
 
-            <h2>Design Thinking</h2>
+                <div class="card">
 
-            <div class="card">
-                <h3>O que é Design Thinking?</h3>
+                    <h2>Interação Humano-Computador (IHC)</h2>
 
-                <p>
-                    Design Thinking é uma abordagem utilizada para solucionar
-                    problemas de forma criativa e centrada nas necessidades
-                    das pessoas.
-                </p>
-            </div>
+                    <h3>O que é IHC?</h3>
 
-            <div class="card">
-                <h3>Principais etapas</h3>
+                    <p>
+                        A Interação Humano-Computador (IHC) é uma área que estuda
+                        a interação entre pessoas e sistemas computacionais.
+                    </p>
 
-                <ul>
-                    <li><strong>Empatia:</strong> entender o usuário;</li>
-                    <li><strong>Definição:</strong> identificar o problema;</li>
-                    <li><strong>Ideação:</strong> criar possíveis soluções;</li>
-                    <li><strong>Prototipação:</strong> desenvolver modelos;</li>
-                    <li><strong>Teste:</strong> avaliar as soluções.</li>
-                </ul>
-            </div>
+                    <p>
+                        Seu objetivo é tornar os sistemas mais fáceis,
+                        eficientes, acessíveis e agradáveis de utilizar.
+                    </p>
 
-            <div class="link-box">
-                <h3>Site sobre Design Thinking</h3>
+                    <h3>Importância da IHC</h3>
 
-                <p>
-                    Acesse o site para conhecer mais sobre
-                    Design Thinking e suas etapas.
-                </p>
-
-                <a href="https://www.gov.br/ouvidorias/pt-br/governanca-de-servicos/ferramentas/design-thinking">Acessar site →</a>
-            </div>
-
-        </section>
+                    <ul>
+                        <li>Melhora a experiência do usuário;</li>
+                        <li>Facilita a utilização dos sistemas;</li>
+                        <li>Reduz erros durante a interação;</li>
+                        <li>Aumenta a acessibilidade;</li>
+                        <li>Melhora a eficiência das tarefas.</li>
+                    </ul>
 
 
-        <!-- ================= HEURÍSTICAS ================= -->
+                    <div class="link-box">
 
-        <section class="tab-content content3">
+                        <h3>Site sobre IHC</h3>
 
-            <h2>10 Heurísticas de Nielsen</h2>
-
-            <div class="card">
-                <h3>O que são?</h3>
-
-                <p>
-                    As heurísticas de Nielsen são princípios utilizados
-                    para avaliar a usabilidade de interfaces digitais.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>As 10 heurísticas</h3>
-
-                <ol>
-                    <li>Visibilidade do status do sistema;</li>
-                    <li>Correspondência entre sistema e mundo real;</li>
-                    <li>Controle e liberdade para o usuário;</li>
-                    <li>Consistência e padrões;</li>
-                    <li>Prevenção de erros;</li>
-                    <li>Reconhecimento em vez de memorização;</li>
-                    <li>Flexibilidade e eficiência de uso;</li>
-                    <li>Design estético e minimalista;</li>
-                    <li>Auxiliar usuários a reconhecer e corrigir erros;</li>
-                    <li>Ajuda e documentação.</li>
-                </ol>
-            </div>
-
-            <div class="link-box">
-                <h3>Site sobre Heurísticas de Nielsen</h3>
-
-                <p>
-                    Acesse o site para conhecer mais sobre as
-                    10 heurísticas de usabilidade.
-                </p>
-
-                <a href="atv2.html">Acessar site →</a>
-            </div>
-
-        </section>
-
-
-        <!-- ================= WCAG ================= -->
-
-        <section class="tab-content content4">
-
-            <h2>WCAG & Cores</h2>
-
-            <div class="card">
-                <h3>O que é WCAG?</h3>
-
-                <p>
-                    WCAG significa Web Content Accessibility Guidelines.
-                    São diretrizes desenvolvidas para tornar conteúdos
-                    da web mais acessíveis para todas as pessoas.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>Princípios da acessibilidade</h3>
-
-                <div class="principles">
-
-                    <div>
-                        <h4>Perceptível</h4>
                         <p>
-                            As informações devem poder ser percebidas
-                            pelos usuários.
+                            Acesse o site para conhecer mais sobre
+                            Interação Humano-Computador.
                         </p>
-                    </div>
 
-                    <div>
-                        <h4>Operável</h4>
-                        <p>
-                            A interface deve permitir que o usuário
-                            consiga interagir com seus elementos.
-                        </p>
-                    </div>
+                        <a href="atv1.html" class="btn-link">
+                            Acessar site →
+                        </a>
 
-                    <div>
-                        <h4>Compreensível</h4>
-                        <p>
-                            As informações e a interface devem ser
-                            fáceis de entender.
-                        </p>
-                    </div>
-
-                    <div>
-                        <h4>Robusto</h4>
-                        <p>
-                            O conteúdo deve funcionar corretamente
-                            em diferentes tecnologias.
-                        </p>
                     </div>
 
                 </div>
-            </div>
 
-            <div class="card">
-                <h3>Importância das cores</h3>
-
-                <p>
-                    As cores devem possuir contraste adequado para facilitar
-                    a leitura e garantir acessibilidade.
-                </p>
-
-                <p>
-                    É importante não utilizar somente a cor para transmitir
-                    uma informação.
-                </p>
-            </div>
-
-            <div class="link-box">
-                <h3>Site sobre WCAG e Acessibilidade</h3>
-
-                <p>
-                    Acesse o site para conhecer mais sobre
-                    acessibilidade na web e as diretrizes WCAG.
-                </p>
-
-                <a href="https://www.iubenda.com/pt-br/help/185090-acessibilidade-e-contraste-de-cores-o-que-e-e-como-aplicar-no-seu-site/">Acessar site →</a>
-            </div>
-
-        </section>
+            </section>
 
 
-        <!-- ================= UX/UI ================= -->
+            <!-- ================= DESIGN THINKING ================= -->
 
-        <section class="tab-content content5">
+            <section class="tab-content content-design-thinking">
 
-            <h2>UX/UI em Desenvolvimento</h2>
+                <div class="card">
 
-            <div class="card">
-                <h3>UX - User Experience</h3>
+                    <h2>Design Thinking</h2>
 
-                <p>
-                    UX está relacionada à experiência que uma pessoa
-                    possui ao utilizar um produto, sistema ou serviço.
-                </p>
+                    <h3>O que é Design Thinking?</h3>
 
-                <p>
-                    O objetivo é criar experiências úteis, eficientes
-                    e agradáveis.
-                </p>
-            </div>
+                    <p>
+                        Design Thinking é uma abordagem utilizada para solucionar
+                        problemas de forma criativa e centrada nas necessidades
+                        das pessoas.
+                    </p>
 
-            <div class="card">
-                <h3>UI - User Interface</h3>
+                    <h3>Principais etapas</h3>
 
-                <p>
-                    UI está relacionada à interface visual de um sistema,
-                    incluindo cores, tipografia, botões, menus e outros
-                    elementos gráficos.
-                </p>
-            </div>
+                    <ul>
+                        <li>
+                            <strong>Empatia:</strong> entender o usuário;
+                        </li>
 
-            <div class="card">
-                <h3>UX + UI</h3>
+                        <li>
+                            <strong>Definição:</strong> identificar o problema;
+                        </li>
 
-                <p>
-                    UX e UI trabalham juntas para criar interfaces
-                    funcionais, bonitas e fáceis de utilizar.
-                </p>
-            </div>
+                        <li>
+                            <strong>Ideação:</strong> criar possíveis soluções;
+                        </li>
 
-            <div class="link-box">
-                <h3>Site sobre UX/UI</h3>
+                        <li>
+                            <strong>Prototipação:</strong> desenvolver modelos;
+                        </li>
 
-                <p>
-                    Acesse o site para conhecer mais sobre
-                    experiência e interface do usuário.
-                </p>
+                        <li>
+                            <strong>Teste:</strong> avaliar as soluções.
+                        </li>
+                    </ul>
 
-                <a href="https://www.softdesign.com.br/blog/desvendando-a-diferenca-entre-ux-e-ui-design/">Acessar site →</a>
-            </div>
 
-        </section>
+                    <div class="link-box">
+
+                        <h3>Site sobre Design Thinking</h3>
+
+                        <p>
+                            Acesse o site para conhecer mais sobre
+                            Design Thinking e suas etapas.
+                        </p>
+
+                        <a
+                            href="https://www.gov.br/ouvidorias/pt-br/governanca-de-servicos/ferramentas/design-thinking"
+                            class="btn-link"
+                            target="_blank"
+                        >
+                            Acessar site →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ================= HEURÍSTICAS ================= -->
+
+            <section class="tab-content content-heuristicas">
+
+                <div class="card">
+
+                    <h2>10 Heurísticas de Nielsen</h2>
+
+                    <h3>O que são?</h3>
+
+                    <p>
+                        As heurísticas de Nielsen são princípios utilizados
+                        para avaliar a usabilidade de interfaces digitais.
+                    </p>
+
+                    <h3>As 10 heurísticas</h3>
+
+                    <ol>
+                        <li>
+                            Visibilidade do status do sistema;
+                        </li>
+
+                        <li>
+                            Correspondência entre sistema e mundo real;
+                        </li>
+
+                        <li>
+                            Controle e liberdade para o usuário;
+                        </li>
+
+                        <li>
+                            Consistência e padrões;
+                        </li>
+
+                        <li>
+                            Prevenção de erros;
+                        </li>
+
+                        <li>
+                            Reconhecimento em vez de memorização;
+                        </li>
+
+                        <li>
+                            Flexibilidade e eficiência de uso;
+                        </li>
+
+                        <li>
+                            Design estético e minimalista;
+                        </li>
+
+                        <li>
+                            Auxiliar usuários a reconhecer e corrigir erros;
+                        </li>
+
+                        <li>
+                            Ajuda e documentação.
+                        </li>
+                    </ol>
+
+
+                    <div class="link-box">
+
+                        <h3>Site sobre Heurísticas de Nielsen</h3>
+
+                        <p>
+                            Acesse o site para conhecer mais sobre as
+                            10 heurísticas de usabilidade.
+                        </p>
+
+                        <a href="atv2.html" class="btn-link">
+                            Acessar site →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ================= WCAG ================= -->
+
+            <section class="tab-content content-wcag">
+
+                <div class="card">
+
+                    <h2>WCAG & Cores</h2>
+
+                    <h3>O que é WCAG?</h3>
+
+                    <p>
+                        WCAG significa Web Content Accessibility Guidelines.
+                        São diretrizes desenvolvidas para tornar conteúdos
+                        da web mais acessíveis para todas as pessoas.
+                    </p>
+
+                    <h3>Princípios da acessibilidade</h3>
+
+
+                    <div class="principles">
+
+                        <div>
+
+                            <h4>Perceptível</h4>
+
+                            <p>
+                                As informações devem poder ser percebidas
+                                pelos usuários.
+                            </p>
+
+                        </div>
+
+
+                        <div>
+
+                            <h4>Operável</h4>
+
+                            <p>
+                                A interface deve permitir que o usuário
+                                consiga interagir com seus elementos.
+                            </p>
+
+                        </div>
+
+
+                        <div>
+
+                            <h4>Compreensível</h4>
+
+                            <p>
+                                As informações e a interface devem ser
+                                fáceis de entender.
+                            </p>
+
+                        </div>
+
+
+                        <div>
+
+                            <h4>Robusto</h4>
+
+                            <p>
+                                O conteúdo deve funcionar corretamente
+                                em diferentes tecnologias.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <h3>Importância das cores</h3>
+
+                    <p>
+                        As cores devem possuir contraste adequado para facilitar
+                        a leitura e garantir acessibilidade.
+                    </p>
+
+                    <p>
+                        É importante não utilizar somente a cor para transmitir
+                        uma informação.
+                    </p>
+
+
+                    <div class="link-box">
+
+                        <h3>Site sobre WCAG e Acessibilidade</h3>
+
+                        <p>
+                            Acesse o site para conhecer mais sobre
+                            acessibilidade na web e as diretrizes WCAG.
+                        </p>
+
+                        <a
+                            href="https://www.iubenda.com/pt-br/help/185090-acessibilidade-e-contraste-de-cores-o-que-e-e-como-aplicar-no-seu-site/"
+                            class="btn-link"
+                            target="_blank"
+                        >
+                            Acessar site →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ================= UX/UI ================= -->
+
+            <section class="tab-content content-ux-ui">
+
+                <div class="card">
+
+                    <h2>UX/UI em Desenvolvimento</h2>
+
+                    <h3>UX - User Experience</h3>
+
+                    <p>
+                        UX está relacionada à experiência que uma pessoa
+                        possui ao utilizar um produto, sistema ou serviço.
+                    </p>
+
+                    <p>
+                        O objetivo é criar experiências úteis, eficientes
+                        e agradáveis.
+                    </p>
+
+
+                    <h3>UI - User Interface</h3>
+
+                    <p>
+                        UI está relacionada à interface visual de um sistema,
+                        incluindo cores, tipografia, botões, menus e outros
+                        elementos gráficos.
+                    </p>
+
+
+                    <h3>UX + UI</h3>
+
+                    <p>
+                        UX e UI trabalham juntas para criar interfaces
+                        funcionais, bonitas e fáceis de utilizar.
+                    </p>
+
+
+                    <div class="link-box">
+
+                        <h3>Site sobre UX/UI</h3>
+
+                        <p>
+                            Acesse o site para conhecer mais sobre
+                            experiência e interface do usuário.
+                        </p>
+
+                        <a
+                            href="https://www.softdesign.com.br/blog/desvendando-a-diferenca-entre-ux-e-ui-design/"
+                            class="btn-link"
+                            target="_blank"
+                        >
+                            Acessar site →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
 
     </main>
 
 
+    <!-- ================= FOOTER ================= -->
+
     <footer>
+
         <p>
             Portal Educacional - IHC & UX/UI
         </p>
@@ -316,7 +446,9 @@
         <p>
             Desenvolvido para fins acadêmicos.
         </p>
+
     </footer>
 
 </body>
+
 </html>
