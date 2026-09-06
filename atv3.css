@@ -1,0 +1,495 @@
+css
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #f4f6f9;
+
+    color: #252b33;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    background: #1140a3;
+
+    color: white;
+
+    padding: 35px 20px;
+
+    text-align: center;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+header h1 {
+    font-size: 30px;
+
+    font-weight: 700;
+}
+
+
+/* =========================
+   CONTAINER
+========================= */
+
+.tabs-container {
+    width: 90%;
+
+    max-width: 1100px;
+
+    margin: 35px auto;
+}
+
+
+/* =========================
+   RADIO BUTTONS
+========================= */
+
+.tabs-container > input {
+    display: none;
+}
+
+
+/* =========================
+   MENU DAS ABAS
+========================= */
+
+.nav-tabs {
+    display: flex;
+
+    background: white;
+
+    border-radius: 12px 12px 0 0;
+
+    overflow-x: auto;
+
+    box-shadow:
+        0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.nav-tabs label {
+    flex: 1;
+
+    min-width: 150px;
+
+    padding: 18px 15px;
+
+    text-align: center;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    color: #596273;
+
+    cursor: pointer;
+
+    border-bottom: 3px solid transparent;
+
+    transition: all 0.25s ease;
+}
+
+.nav-tabs label:hover {
+    background: #f1f4f8;
+
+    color: #172033;
+}
+
+
+/* =========================
+   ABA ATIVA
+========================= */
+
+#tab-ihc:checked ~ .nav-tabs label[for="tab-ihc"],
+#tab-design-thinking:checked ~ .nav-tabs label[for="tab-design-thinking"],
+#tab-heuristicas:checked ~ .nav-tabs label[for="tab-heuristicas"],
+#tab-wcag:checked ~ .nav-tabs label[for="tab-wcag"],
+#tab-ux-ui:checked ~ .nav-tabs label[for="tab-ux-ui"] {
+
+    color: #2563eb;
+
+    border-bottom: 3px solid #2563eb;
+
+    background: #f8faff;
+}
+
+
+/* =========================
+   CONTEÚDO
+========================= */
+
+.content-container {
+
+    background: white;
+
+    min-height: 500px;
+
+    padding: 45px;
+
+    border-radius: 0 0 12px 12px;
+
+    box-shadow:
+        0 5px 18px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================
+   ABAS
+========================= */
+
+.tab-content {
+    display: none;
+
+    animation: aparecer 0.35s ease;
+}
+
+
+/* Mostra a aba selecionada */
+
+#tab-ihc:checked ~ .content-container .content-ihc,
+#tab-design-thinking:checked ~ .content-container .content-design-thinking,
+#tab-heuristicas:checked ~ .content-container .content-heuristicas,
+#tab-wcag:checked ~ .content-container .content-wcag,
+#tab-ux-ui:checked ~ .content-container .content-ux-ui {
+
+    display: block;
+}
+
+
+/* =========================
+   ANIMAÇÃO
+========================= */
+
+@keyframes aparecer {
+
+    from {
+        opacity: 0;
+
+        transform: translateY(8px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform: translateY(0);
+    }
+
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.card {
+    max-width: 900px;
+
+    margin: 0 auto;
+}
+
+.card h2 {
+
+    color: #172033;
+
+    font-size: 28px;
+
+    margin-bottom: 18px;
+}
+
+.card h2::after {
+
+    content: "";
+
+    display: block;
+
+    width: 50px;
+
+    height: 4px;
+
+    background: #2563eb;
+
+    border-radius: 5px;
+
+    margin-top: 10px;
+}
+
+.card p {
+
+    color: #596273;
+
+    font-size: 16px;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   LISTAS
+========================= */
+
+.card ul,
+.card ol {
+
+    margin: 20px 0 25px 25px;
+
+    color: #414a59;
+}
+
+.card li {
+
+    margin-bottom: 12px;
+
+    padding-left: 5px;
+}
+
+.card li::marker {
+
+    color: #2563eb;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   CAIXAS DE LINKS
+========================= */
+
+.link-box {
+
+    margin-top: 30px;
+
+    padding: 25px;
+
+    background: #f5f8ff;
+
+    border-left: 5px solid #2563eb;
+
+    border-radius: 8px;
+}
+
+.link-box h3 {
+
+    color: #172033;
+
+    margin-bottom: 8px;
+
+    font-size: 19px;
+}
+
+.link-box p {
+
+    margin-bottom: 18px;
+
+    font-size: 15px;
+}
+
+
+/* Caixa secundária */
+
+.link-box.secondary {
+
+    background: #f7f7f7;
+
+    border-left-color: #64748b;
+}
+
+
+/* =========================
+   BOTÕES
+========================= */
+
+.btn-link {
+
+    display: inline-block;
+
+    background: #2563eb;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 11px 20px;
+
+    border-radius: 7px;
+
+    font-weight: 600;
+
+    font-size: 14px;
+
+    transition: all 0.25s ease;
+}
+
+.btn-link:hover {
+
+    background: #1d4ed8;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 5px 12px rgba(37, 99, 235, 0.25);
+}
+
+
+/* Botão secundário */
+
+.btn-link.outline {
+
+    background: transparent;
+
+    color: #2563eb;
+
+    border: 2px solid #2563eb;
+}
+
+.btn-link.outline:hover {
+
+    background: #2563eb;
+
+    color: white;
+}
+
+
+/* =========================
+   PRINCÍPIOS WCAG
+========================= */
+
+.principles {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 15px;
+
+    margin: 25px 0;
+}
+
+.principles div {
+
+    padding: 20px;
+
+    text-align: center;
+
+    background: #f5f8ff;
+
+    border-radius: 8px;
+
+    border: 1px solid #e1e7f0;
+
+    color: #2563eb;
+}
+
+
+/* =========================
+   STRONG
+========================= */
+
+strong {
+    color: #172033;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+
+    text-align: center;
+
+    padding: 25px;
+
+    margin-top: 40px;
+
+    background: #172033;
+
+    color: #b9c0cc;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 25px 15px;
+    }
+
+    header h1 {
+        font-size: 22px;
+    }
+
+    .tabs-container {
+        width: 95%;
+
+        margin: 20px auto;
+    }
+
+    .content-container {
+        padding: 25px 20px;
+    }
+
+    .card h2 {
+        font-size: 23px;
+    }
+
+    .nav-tabs label {
+
+        min-width: 130px;
+
+        padding: 15px 10px;
+
+        font-size: 12px;
+    }
+
+    .principles {
+
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+/* =========================
+   CELULAR PEQUENO
+========================= */
+
+@media (max-width: 480px) {
+
+    .content-container {
+        padding: 20px 15px;
+    }
+
+    .principles {
+        grid-template-columns: 1fr;
+    }
+
+    .link-box {
+        padding: 20px;
+    }
+
+}
