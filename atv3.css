@@ -17,11 +17,13 @@ css
 body {
     font-family: Arial, Helvetica, sans-serif;
 
-    background: #f4f6f9;
+    background: #ced8e7;
 
     color: #252b33;
 
     line-height: 1.6;
+
+    overflow-x: hidden;
 }
 
 
@@ -76,12 +78,13 @@ header h1 {
 
 .nav-tabs {
     display: flex;
+    flex-wrap: wrap;
 
     background: white;
 
     border-radius: 12px 12px 0 0;
 
-    overflow-x: auto;
+    overflow: hidden;
 
     box-shadow:
         0 3px 12px rgba(0, 0, 0, 0.08);
