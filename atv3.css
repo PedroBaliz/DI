@@ -65,6 +65,64 @@ header h1 {
 
 
 /* =========================
+   INTRODUÇÃO
+========================= */
+
+.intro {
+    background: white;
+
+    padding: 35px 40px;
+
+    margin-bottom: 25px;
+
+    border-radius: 12px;
+
+    border-left: 5px solid #2563eb;
+
+    box-shadow:
+        0 5px 18px rgba(0, 0, 0, 0.08);
+}
+
+.intro h2 {
+    color: #172033;
+
+    font-size: 26px;
+
+    margin-bottom: 12px;
+}
+
+.intro h2::after {
+    content: "";
+
+    display: block;
+
+    width: 50px;
+
+    height: 4px;
+
+    background: #2563eb;
+
+    border-radius: 5px;
+
+    margin-top: 8px;
+}
+
+.intro p {
+    color: #596273;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    margin-bottom: 10px;
+}
+
+.intro p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================
    RADIO BUTTONS
 ========================= */
 
@@ -168,6 +226,8 @@ header h1 {
 }
 
 
+/* Mostra a aba selecionada */
+
 #tab-ihc:checked ~ .content-container .content-ihc,
 #tab-design-thinking:checked ~ .content-container .content-design-thinking,
 #tab-heuristicas:checked ~ .content-container .content-heuristicas,
@@ -217,7 +277,6 @@ header h1 {
 }
 
 .card h2::after {
-
     content: "";
 
     display: block;
@@ -239,7 +298,6 @@ header h1 {
 ========================= */
 
 .card h3 {
-
     color: #172033;
 
     font-size: 19px;
@@ -250,7 +308,6 @@ header h1 {
 }
 
 .card p {
-
     color: #596273;
 
     font-size: 16px;
@@ -267,21 +324,18 @@ header h1 {
 
 .card ul,
 .card ol {
-
     margin: 20px 0 28px 25px;
 
     color: #414a59;
 }
 
 .card li {
-
     margin-bottom: 13px;
 
     padding-left: 5px;
 }
 
 .card li::marker {
-
     color: #2563eb;
 
     font-weight: bold;
@@ -293,7 +347,6 @@ header h1 {
 ========================= */
 
 .link-box {
-
     margin-top: 35px;
 
     padding: 28px;
@@ -304,11 +357,11 @@ header h1 {
 
     border-radius: 10px;
 
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
+    box-shadow:
+        0 3px 10px rgba(0, 0, 0, 0.04);
 }
 
 .link-box h3 {
-
     color: #172033;
 
     margin-top: 0;
@@ -319,7 +372,6 @@ header h1 {
 }
 
 .link-box p {
-
     margin-bottom: 18px;
 
     font-size: 15px;
@@ -329,7 +381,6 @@ header h1 {
 /* Caixa secundária */
 
 .link-box.secondary {
-
     background: #f7f7f7;
 
     border-left-color: #64748b;
@@ -341,7 +392,6 @@ header h1 {
 ========================= */
 
 .btn-link {
-
     display: inline-block;
 
     background: #2563eb;
@@ -362,7 +412,6 @@ header h1 {
 }
 
 .btn-link:hover {
-
     background: #1d4ed8;
 
     transform: translateY(-2px);
@@ -375,7 +424,6 @@ header h1 {
 /* Botão secundário */
 
 .btn-link.outline {
-
     background: transparent;
 
     color: #2563eb;
@@ -384,7 +432,6 @@ header h1 {
 }
 
 .btn-link.outline:hover {
-
     background: #2563eb;
 
     color: white;
@@ -396,7 +443,6 @@ header h1 {
 ========================= */
 
 .principles {
-
     display: grid;
 
     grid-template-columns: repeat(4, 1fr);
@@ -407,7 +453,6 @@ header h1 {
 }
 
 .principles div {
-
     padding: 22px;
 
     text-align: center;
@@ -424,7 +469,6 @@ header h1 {
 }
 
 .principles div:hover {
-
     transform: translateY(-4px);
 
     box-shadow:
@@ -432,14 +476,12 @@ header h1 {
 }
 
 .principles h4 {
-
     margin-bottom: 8px;
 
     font-size: 17px;
 }
 
 .principles p {
-
     font-size: 14px;
 
     margin-bottom: 0;
@@ -451,7 +493,6 @@ header h1 {
 ========================= */
 
 strong {
-
     color: #172033;
 }
 
@@ -461,7 +502,6 @@ strong {
 ========================= */
 
 footer {
-
     text-align: center;
 
     padding: 28px;
@@ -482,6 +522,14 @@ footer {
 
 @media (max-width: 768px) {
 
+    .intro {
+        padding: 25px 20px;
+    }
+
+    .intro h2 {
+        font-size: 23px;
+    }
+
     header {
         padding: 30px 15px;
     }
@@ -491,24 +539,20 @@ footer {
     }
 
     .tabs-container {
-
         width: 95%;
 
         margin: 25px auto;
     }
 
     .content-container {
-
         padding: 30px 20px;
     }
 
     .card h2 {
-
         font-size: 24px;
     }
 
     .nav-tabs label {
-
         min-width: 130px;
 
         padding: 15px 10px;
@@ -517,7 +561,6 @@ footer {
     }
 
     .principles {
-
         grid-template-columns: 1fr 1fr;
     }
 }
@@ -529,28 +572,35 @@ footer {
 
 @media (max-width: 480px) {
 
-    .content-container {
+    .intro {
+        padding: 22px 18px;
+    }
 
+    .intro h2 {
+        font-size: 21px;
+    }
+
+    .intro p {
+        font-size: 15px;
+    }
+
+    .content-container {
         padding: 25px 15px;
     }
 
     .principles {
-
         grid-template-columns: 1fr;
     }
 
     .link-box {
-
         padding: 20px;
     }
 
     .card h2 {
-
         font-size: 22px;
     }
 
     .card h3 {
-
         font-size: 18px;
     }
 }
